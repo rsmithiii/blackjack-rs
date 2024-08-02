@@ -1,4 +1,3 @@
-#![allow(dead_code)]
 use std::io;
 use std::io::Write;
 use std::io::BufRead;
@@ -11,12 +10,6 @@ mod player;
 mod deck;
 
 use crate::player::BlackjackPlayer;
-
-enum BlackjackPlayChoice
-{
-    Play,
-    DontPlay,
-}
 
 fn ask_play_blackjack(first_game: bool) -> bool
 {
